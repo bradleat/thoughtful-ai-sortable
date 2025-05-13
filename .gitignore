@@ -1,0 +1,52 @@
+# File types
+*.swp
+
+# Build output
+.venv/
+node_modules
+build
+dist
+.parcel-cache
+.cache
+coverage
+__pycache__/
+.nx/cache
+.nx/workspace-data
+
+# project files
+.idea
+
+# OS
+.DS_Store
+
+# log files
+*.log
+
+# .log.md files
+*.log.md
+
+# env files
+.env
+
+# todos
+@todos
+
+# terraform
+.terraform
+terraform.tfstate.backup
+*.secret.tfvars
+
+# vscode last sql
+.vscode/last.sql
+
+# eslint cache
+.eslintcache
+
+# core.node files
+core.node.*
+
+# node report files
+report.*.json
+
+# Rust Build
+target/

@@ -1,0 +1,48 @@
+{
+  "name": "thoughtful-ai-interview",
+  "private": true,
+  "version": "0.7.0",
+  "engines": {
+    "bun": "v.1.42"
+  },
+  "description": "thoughtful ai interview",
+  "scripts": {
+    "check:lint": "biome check ./packages",
+    "check:lint:errors": "biome check ./ --diagnostic-level=error",
+    "fix:lint": "biome check ./packages --fix",
+    "start": "bun ./main.ts",
+    "dev": "bun --watch ./main.ts",
+    "clean": "rm -rf build && rm -rf node_modules/.cache",
+    "check:tsc": "tsc --noEmit",
+    "test": "bun test"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.8.1",
+    "@types/bun": "^1.1.16",
+    "@types/react": "^18.2.6",
+    "@types/react-dom": "^18.0.4",
+    "neverthrow": "^6.0.0",
+    "react": "^18.1.x",
+    "react-dom": "^18.1.x",
+    "react-router-dom": "^6.3.0",
+    "ts-is-present": "^1.2.2",
+    "ts-pattern": "^5.0.5",
+    "typia": "^7.2.0"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "1.9.4",
+    "@napi-rs/cli": "^2.14.8",
+    "@ryoppippi/unplugin-typia": "^1.1.0",
+    "lerna": "^8.1.9",
+    "nx": "^20.2.2",
+    "typescript": "~5.6.3"
+  },
+  "trustedDependencies": [
+    "@biomejs/biome",
+    "nx"
+  ],
+  "workspaces": [
+    "packages/inkibra/*"
+  ]
+}

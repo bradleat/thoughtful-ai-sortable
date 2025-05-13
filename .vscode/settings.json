@@ -1,0 +1,49 @@
+{
+  "editor.inlineSuggest.enabled": true,
+  "typescript.referencesCodeLens.enabled": true,
+  "typescript.implementationsCodeLens.enabled": true,
+  "editor.tabSize": 2,
+  "editor.insertSpaces": true,
+  "workbench.editor.showTabs": "multiple",
+  "editor.detectIndentation": true,
+  "python.pythonPath": "${workspaceFolder}/.venv/bin/python",
+  "[python]": {
+    "editor.formatOnType": true,
+    "editor.defaultFormatter": "ms-python.black-formatter"
+  },
+  "terminal.integrated.env.osx": {
+    "INKIBRA_CORE_PATH": "${workspaceFolder}"
+  },
+  "terminal.integrated.env.linux": {
+    "INKIBRA_CORE_PATH": "${workspaceFolder}"
+  },
+  "terminal.integrated.env.windows": {
+    "INKIBRA_CORE_PATH": "${workspaceFolder}"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "biomejs.biome"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "biomejs.biome"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "biomejs.biome"
+  },
+  "[css]": {
+    "editor.defaultFormatter": "biomejs.biome"
+  },
+  "typescript.tsdk": "./node_modules/typescript/lib",
+  "cSpell.words": [
+   
+  ],
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.organizeImports.biome": "explicit"
+  },
+  "rust-analyzer.linkedProjects": [
+    "Cargo.toml"
+  ],
+  "rust-analyzer.checkOnSave": false,
+  "terminal.integrated.environmentChangesIndicator": "on",
+  "terminal.integrated.scrollback": 100000,
+}
