@@ -40,8 +40,8 @@ brew install bun
 1. Clone this repository:
 
    ```bash
-   git clone [repository-url]
-   cd [repository-name]
+   git clone git@github.com:bradleat/thoughtful-ai-sortable.git
+   cd thoughtful-ai-sortable
    ```
 
 2. Install dependencies:
