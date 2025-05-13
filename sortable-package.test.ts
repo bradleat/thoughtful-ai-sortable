@@ -178,7 +178,11 @@ describe("SortablePackageDispatchContext", () => {
 		dispatchContext.addPackage(specialPackage);
 		dispatchContext.addPackage(rejectedPackage);
 
-		// Note: We'd need getters in the class to properly test this
-		// This test is incomplete without a way to check the contents of each pile
+		// biome-ignore lint/complexity/useLiteralKeys: test
+		expect(dispatchContext["standardPackages"]).toEqual([standardPackage]);
+		// biome-ignore lint/complexity/useLiteralKeys: test
+		expect(dispatchContext["specialPackages"]).toEqual([specialPackage]);
+		// biome-ignore lint/complexity/useLiteralKeys: test
+		expect(dispatchContext["rejectedPackages"]).toEqual([rejectedPackage]);
 	});
 });

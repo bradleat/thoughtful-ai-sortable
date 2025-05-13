@@ -5,6 +5,8 @@ type SortablePackageData = {
 	weightInKG: number;
 };
 
+type SortablePackagePile = "standard" | "special" | "rejected";
+
 export class SortablePackage<T extends SortablePackageData> {
 	private static readonly PACKAGE_DIMENSION_THRESHOLD = 150;
 	private static readonly PACKAGE_VOLUME_THRESHOLD = 1_000_000;
@@ -31,7 +33,7 @@ export class SortablePackage<T extends SortablePackageData> {
 
 	private static getSortPile(
 		inputPackage: SortablePackageData,
-	): "standard" | "special" | "rejected" {
+	): SortablePackagePile {
 		const isBulky = SortablePackage.isBulky(inputPackage);
 		const isHeavy = SortablePackage.isHeavy(inputPackage);
 
